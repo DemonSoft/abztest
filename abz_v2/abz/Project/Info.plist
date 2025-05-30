@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>abz</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>abz</string>
+			</array>
+		</dict>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Дозвольте додатку abz доступ до камери для завантаження отриманих фото в якості Вашого аватара.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Дозвольте додатку abz доступ до фототеки для завантаження фотографій і вокористання в якості аватара.</string>
+</dict>
+</plist>
