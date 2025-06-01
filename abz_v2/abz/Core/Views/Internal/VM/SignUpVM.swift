@@ -33,7 +33,8 @@ class SignUpVM : ObservableObject {
     // MARK: - Private properties
     private var rootVM:ContentVM?
     private var pickedPhoto: Data?
-    
+    let maxImageSize = 5 << 20 // ~5Mb
+
     
     // MARK: - Init
     init() {
@@ -84,7 +85,7 @@ class SignUpVM : ObservableObject {
         guard img.size.width >= 70 && img.size.height >= 70 else { return }
         guard let data   = img.jpegData(compressionQuality : 1.0) else { return }
 
-        guard data.count < 5_000_000 else { return }
+        guard data.count < self.maxImageSize else { return }
         
         
         self.pickedPhoto = data

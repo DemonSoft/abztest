@@ -77,7 +77,7 @@ struct FilledListView: View {
         VStack {
             if self.model.isLoading {
                 ProgressView()
-                    .scaleEffect(2)
+                    .controlSize(.large)
                     .tint(.disabled)
                     .padding()
             }
